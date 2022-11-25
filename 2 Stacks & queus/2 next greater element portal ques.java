@@ -36,7 +36,8 @@ class Solution
         
         Stack<Long>st = new Stack <>();
         
-        for(int i=n-1; i>=0; i--) {
+// 	    for(int i=0; i <= n-1 ; i++)   // for next largest elemt right side
+        for(int i=n-1; i>=0; i--) {   // for next largest elemt from left side 
             
             while(!st.empty() && arr[i] >= st.peek()) {
                 st.pop();
