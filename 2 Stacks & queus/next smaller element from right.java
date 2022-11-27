@@ -4,7 +4,7 @@ import java.lang.*;
 import java.io.*;
 
 /*
-next smaller element from left
+next smaller element from right
 5
 input : 8 9  1 2 3 
 outpt : 1 1 -1 -1 -1
@@ -19,7 +19,7 @@ class Solution
         long []ans = new long[n];
         
         Stack<Long>st = new Stack <>();
-        // nearest smaller element from left
+        // nearest smaller element from right
         
         for(int i=n-1; i>= 0 ; i--) {
             
