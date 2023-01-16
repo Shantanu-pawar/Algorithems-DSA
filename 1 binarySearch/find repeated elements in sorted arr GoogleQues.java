@@ -23,7 +23,7 @@ public class Main
 		System.out.println(last);
 // 		here -1 because we jsut want to reffer index, not position
 
-        int ans = (first + last)/2 + 1;
+        	int ans = (last-first) +1; // +1 cause index based position
 		System.out.println("your count is : " + ans);
 	
 	}
