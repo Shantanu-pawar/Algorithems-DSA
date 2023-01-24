@@ -1,8 +1,11 @@
-import java.util.*;
 
+import java.util.*;
 class Solution{
- 
     static boolean isPossible(int a[], int n, int cows, int minDist) {
+
+// so find mid, and check if the distance is greater or equals to mid for search spaces
+// tha'ts why do arr[i]-arr[0] >= arr[mid]
+        
         int cntCows = 1;
         int lastPlacedCow = a[0];
         for (int i = 1; i < n; i++) {
@@ -11,14 +14,19 @@ class Solution{
                 lastPlacedCow = a[i];
             }
         }
+        
+        // it's fine when your count of cows is greter than provide cows 
         if (cntCows >= cows) return true;
         return false;
     }
     public static int aggressiveCows(int a[],int cows){
         Arrays.sort(a);
         int n=a.length;
-        int low = 1, high = a[n - 1] - a[0];
- 
+        int low = 1;
+
+// now this high represent's the search space = lastIndex-firstIndex
+		int high = a[n - 1] - a[0];
+
         while (low <= high) {
             int mid = (low + high) /2;
  
@@ -48,5 +56,10 @@ class Main {
         Solution obj=new Solution();
 		System.out.println(obj.aggressiveCows(nums,k));
  
+ /* input :  6 4 
+            0 3 4 7 10 9
+    output : 3
+
+ */
     }
 }
