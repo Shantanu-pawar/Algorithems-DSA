@@ -2,7 +2,7 @@ import java.util.*;
  
 public class Main {
     public static void main(String[] args) throws Throwable {
-
+// hashing
             Hashmap<String, Integer> hs = new Hashmap<>();
             
             // add the elements we use .put
