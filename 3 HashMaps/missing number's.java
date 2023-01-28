@@ -45,7 +45,7 @@ class Solution {
 
 	    }
 
-		// cover last case 
+		// cover last case if all element's are perfect then just return -1 that's why use flag datatype
 	    if(flag == false)
 		System.out.println(-1);
 		
