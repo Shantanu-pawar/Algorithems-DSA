@@ -4,6 +4,7 @@ public class Main
 {
 	public static void main(String[] args) {
 // 		Selection sort algorithm
+// 		trick to remember : in selection we just have to select the min elemnt and then swap it
 
 		    int []arr = { 21, 12, 1, 62, 4};
             
