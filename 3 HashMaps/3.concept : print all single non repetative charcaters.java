@@ -22,8 +22,25 @@ class Main{
 		  //  here print all non repetative elements 
 		    if(map.get(a) == 1) 
 		        System.out.println("yess element is present : " + a + " "+ map.get(a));
-		    
 		}
+		
+// 		question : you can also print from arr by using same method
+// 		int []arr= {2, 2, 3, 4, 5, 6, 6};
+//         	// output : 3 4 5 
+        
+// 		HashMap<Integer, Integer> map  = new HashMap<>();
+
+// 		for(int i=0; i<arr.length; i++) {
+// 		    int a = arr[i];
+
+// 		    if(map.containsKey(a )) map.put(a, map.get(a) + 1);
+// 		    else map.put(a, 1);
+// 		}
+
+// 		for(int a : map.keySet()) {
+// 		    if( map.get(a) == 1) 
+// 		    System.out.print(a + " ");
+// 		}
 		
 	}
 }
