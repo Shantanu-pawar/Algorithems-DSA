@@ -17,7 +17,8 @@ class Main  {
 
 		long count = 0;
 		for(int x : map.keySet()) {
-			// this map.get(x) >1  handle's the edge case when k == 0
+// this map.get(x) >1  handle's the edge case when k == 0
+// how ? so we basically check if our element is repeated more than 1 so it make's pair and that'll we want
 		    if ((k == 0 && map.get(x) > 1) || (k!=0 && map.containsKey(x + k)) )  
 		    count++;
 		    
