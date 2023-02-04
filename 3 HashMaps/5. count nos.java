@@ -17,7 +17,7 @@ class Main  {
 
 		long count = 0;
 		for(int x : map.keySet()) {
-			// this map.get(x) >1  handle's the edge case of 0
+			// this map.get(x) >1  handle's the edge case when k == 0
 		    if ((k == 0 && map.get(x) > 1) || (k!=0 && map.containsKey(x + k)) )  
 		    count++;
 		    
