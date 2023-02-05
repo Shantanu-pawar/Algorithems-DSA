@@ -1,23 +1,29 @@
 import java.util.*;
- 
-public class Main {
-    public static void main(String[] args) throws Throwable {
-            Hashmap<String, Integer> hs = new Hashmap<>();
-            // add the elements we use .put
-            hs.put("shantanu", 001);
-            hs.put("dadu", 34);
-            
-            hs.get(shantanu);
-            // then our output is 001
-            
-            hs.containsKey(shantanu);
-            // it should check and then return if this key is present in our DS or not
-            // output is  : true;
-            
-            // NOtes : in arrays you have only specific indexes 
-            // but in hashmaps you have whatever type of indexes just relate it
-    }
+
+// 		Question : implimentation and printing using map.entry
+public class Main{
+	public static void main(String[] args) {		
+
+        String str = "accioJob";
+        int []arr = {4, 5, 6, 7, 0, 2, 1, 3};
+        int n = arr.length;
+        
+        HashMap <Integer, Character> map = new HashMap<>();
+        
+        for(int i=0; i<n; i++) {
+            char ch = str.charAt(i);
+            map.put(arr[i], ch);
+        }
+        
+        // note : entry.getKey() - print's all arr in sorted format
+        //       entry.getValue() = print all character's from hashmap
+               
+        for (Map.Entry<Integer, Character> entry : map.entrySet()) 
+            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+        
+	}
 }
+
 
 //  how to print keyset in hashmaps 
 
