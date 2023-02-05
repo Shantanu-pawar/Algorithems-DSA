@@ -10,14 +10,13 @@ class Solution {
 	        b[i] = arr[i];
 	        map.put(arr[i], i);
 		}
-		//case1 : create your ideal arr to compare with 
+		//case1 : create your ideal arr to compare with and sort it
 		Arrays.sort(b);
 		
 		for(int i=0; i<n ;i++) {
-		    
+			
 		    if(arr[i] != b[i]) {
 		        int ind = map.get(b[i]); // just find the index of the value b
-
 // case 2 : now let's do general swaping 
 		        int temp = arr[i];
 		        arr[i] = arr[ind];
