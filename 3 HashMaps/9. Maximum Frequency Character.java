@@ -29,3 +29,43 @@ class Main{
         System.out.println(max);
  	}
 }
+
+
+
+// hashmap approach
+
+import java.util.*;
+class Main{
+    public static void main(String []args) {
+        Scanner in = new  Scanner(System.in);
+        String s = in.next();
+ 
+		char ans = find(s);
+		System.out.println(ans);
+    }
+	
+	public static Character find(String s) {
+	 if(s.length() == 1) return s.charAt(0);
+        Map<Character, Integer> freq = new HashMap<>(); 
+		// map to store frequency of each alphabet
+		
+        for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+ 
+        char maxChar = '1';
+		int maxFreq=0;
+        for (char c : freq.keySet()) {
+            if (freq.get(c) > maxFreq){ 
+                maxChar = c;
+				maxFreq = freq.get(c);
+			}
+            if (freq.get(c) == maxFreq && c < maxChar) 
+                maxChar = c;
+        }
+ 
+        return maxChar;
+    }
+}
+
