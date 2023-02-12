@@ -18,13 +18,13 @@ class Solution{
     public String FirstNonRepeating(String st){
 		
 // 		solve using freq arr method here : 
-		String ans = "";
+	String ans = "";
         int [] freq = new int[26];
         
         for(int i=0; i<st.length(); i++) {
 
-			// base case :: simply count the freq in arr right
-			char ch = st.charAt(i);
+	// base case :: simply count the freq in arr right
+	char ch = st.charAt(i);
             freq[ch - 'a']++;
 /*
 case1 : just check if our ch is present only one time in freq then only print
@@ -34,7 +34,7 @@ case1 : just check if our ch is present only one time in freq then only print
 */
             boolean check = false;
             for(int j=0; j<= i; j++) {
-				if(freq[ st.charAt(j) - 'a'] == 1) {
+		if(freq[ st.charAt(j) - 'a'] == 1) {
                     ans += st.charAt(j);
                     check = true;
   // when you found non repeating then you don't need to check further so..
@@ -45,6 +45,8 @@ case1 : just check if our ch is present only one time in freq then only print
 // case2 : otherwise just print # cause there is duplicate element's
             if(check == false) ans += "#";   
         }
-		return ans;
+	return ans;
     }
 }
+
+
