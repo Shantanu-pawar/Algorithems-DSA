@@ -6,12 +6,13 @@ public class Main {
 		// base case : if only 1 string length
 		if (s.length() <= 1) return s;
 
-	    if (s.charAt(0) == s.charAt(1)) {
+		//case1  : if my char is mathing then just store char plus (*)
+	    else if (s.charAt(0) == s.charAt(1)) {
 	        System.out.println(s.charAt(0) + " " + s.substring(1));
-	        return s.charAt(0) + "*" + pairStar(s.substring(1));  
-	        
+	        return s.charAt(0) + "*" + pairStar(s.substring(1));     
 	    }
 	    
+		// case 2: otherwise just print as it is using substring
 	    else {
 	        System.out.println(s.charAt(0) + " " + s.substring(1));
 	         return s.charAt(0) + pairStar(s.substring(1));
