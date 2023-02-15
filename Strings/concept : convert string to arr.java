@@ -10,9 +10,14 @@ public class Main {
             2. Using toChar() method of String class
         
 */
-        String str = "hello world";
-        
+     
+//      method : convert Arr to string :: very helpful method
+
+	    char []ch = {'a', 'd', 'e', 'd', 'q'};
+	    System.out.println(new String(ch));
+     
         // approach 1: 
+             String str = "hello world";
         char []arr = new char[str.length()];
         
         for(int i=0; i<str.length() ; i++) {
