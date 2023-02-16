@@ -76,14 +76,11 @@
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{abhinavjaiswal0144@gmail.com}
+  \mailaddress{shantanupawar292@gmail.com}
   \phone{(+91) 7385952851}
-%  \mailaddress{Address, Street, 00000 County}
-%  \location{Gwalior, India}
-%  \homepage{abhinavj004.github.io}
-%  \twitter{@marissamayer}
   \linkedin{linkedin.com/in/shantanu-pawar}
-   \github{github.com/abhinavj004} % I'm just making this up though.
+   \github{github.com} 
+   
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -97,10 +94,7 @@
 % \AtBeginEnvironment{itemize}{\small}
 
 
-%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
-%% You can always just use \marginpar{...} if you do
-%% not need to align the top of the contents to any
-%% \cvsection title in the "main" bar.
+
 \cvsection[page1sidebar]{Experience}
 
 \cvevent{\textbf{Full Stack Web Developer - Training}}{Acciojob}{Sept 2022 -- present}{Delhi}
