@@ -49,6 +49,20 @@ class Main{
 //   printing the storing element's using keyset
     for(Character a : map.keySet())
     System.out.print(a +" ");
-
+// _________________________________________________________________
+		
+// 	print elment's in map using it's sorted indexing based positions without use Arr
+		
+        HashMap<Integer, Integer> map = new HashMap<>();
+	map.put(2, 12);
+	map.put(0, 15);
+	map.put(1, 88);
+	map.put(3, 123);
+	
+	int []arr = new int[4];
+	for (HashMap.Entry<Integer, Integer> m : map.entrySet()) {
+	    System.out.println("Key: " + m.getKey() + " Value: " + m.getValue());
+	}
+		
 	}
 }
