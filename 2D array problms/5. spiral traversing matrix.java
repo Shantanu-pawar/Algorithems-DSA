@@ -18,10 +18,14 @@ class Main {
         
         while(srow <= erow && scol <= ecol){
             
-            for(int i=scol; i<= ecol; i++) System.out.print( arr[srow][i] + " ");
+//          now if you don't understand like why we take only arr[srow][i] here  ? 
+//          so let's see : this is arr[row][col] = we know this
+//          now we put which one is vary and which is constant over here
+            
+            for(int i=scol; i<= ecol; i++) System.out.print( arr[srow][i] + " "); // col vary row is fixed => arr[row][col] => arr[srow][i]
             srow++;
             
-            for(int i=srow; i<= erow; i++) System.out.print( arr[i][ecol] + " ");
+            for(int i=srow; i<= erow; i++) System.out.print( arr[i][ecol] + " "); // here see col is fixed and row vary => arr[i][col]
             ecol--;
             
             if(srow <= erow) {
