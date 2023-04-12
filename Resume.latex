@@ -1,4 +1,187 @@
+// updated on 12 april 2023 
 
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+
+% this is excess package from chatGPT to change the colors 
+\usepackage{xcolor}
+% \usepackage{hyperref}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{404241}
+\definecolor{LightGrey}{HTML}{211d1c}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+\name{Shantanu Pawar.}
+\break
+\tagline{}
+
+\personalinfo{%
+\divider
+\fontsize{10}{14}\selectfont
+
+ \mailaddress{\href{mailto:shantanupawar292@gmail.com}{\textcolor{black}{\bf shantanupawar292@gmail.com}}}
+  \phone{(+91) 73859 52851}
+\linkedin{\href{https://www.linkedin.com/in/shantanu-pawar/} {\textcolor{black}{\bf Linkedin}} }
+\github {\href{https://github.com/Shantanu-pawar} {\textcolor{black}{\bf Github}} }
+
+\smallskip \smallskip \smallskip \smallskip
+\item {A dedicated entry-level software developer proficient in Spring Boot, JSP, and algorithms, with a strong problem-solving and a commitment to delivering high-quality code.
+}
+
+% \birthday{Date Of Birth : 21-08-2000}
+}
+
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+
+\end{fullwidth}
+
+\divider
+
+
+\cvsection[page1sidebar]{PROJECTS}
+\smallskip
+
+% Major chat application project 
+
+% \cvevent{\textbf{GupShup - Real Time Chat WebApp}} {}{}{}
+% \smallskip  
+% \begin{itemize}
+% \item Provide a platform to chat realtime with \textbf{friends}
+% \smallskip 
+% \item Users can send \textbf{text messages, photos}, etc
+% \smallskip 
+% \item We can also create \textbf{group} of multiple users and chat ingroup.
+% \smallskip 
+% \item User's can also \textbf{delete or update} profile.
+% \smallskip 
+% \item \textbf{Languages and Technology} : React-Js, JavaScript, Firebase.
+% \end{itemize}
+% \medskip
+
+
+\cvevent {\href{https://github.com/Shantanu-pawar/High-level-parking-lot-Design}{\textcolor{black}{\faGithub} \textcolor{black}{\bf Parking lot System design.}}} {}{}{}
+
+\begin{itemize}
+
+% sequence to write project description : 
+% 1 point - technology used ?
+% 2. what is key features of your project ? - make sure to highlight the features
+% 3 .wahtever one extra upgrede or you wanna write down just write it
+\item primary goal of the system is to automate the parking process
+\item The system tracks parking spots availability and \textbf{displays it to users in real-time, so it saves the time.}
+
+\item  Users can pay for parking and \textbf{ system automatically generates a bill} based on the parking duration.
+    
+\end{itemize}
+\medskip
+\divider
+
+
+% project - merge sort
+
+\cvevent {\href{https://github.com/Shantanu-pawar/Merge-sort-visualiser}{\textcolor{black}{\faGithub} \textcolor{black}{\bf Merge Sort visualiser}}} {}{}{}
+
+\begin{itemize}
+
+
+\item \textbf{Languages and Technology} : React-Js, JavaScript. 
+\item Main aim of this project is to understand how it can sort \textbf{large Datasets efficiently.}
+\item The system \textbf{allows users to control the animation speed}, enabling them to slow down or \textbf{speed up the sorting process} as needed.
+
+\item  The system can \textbf{generate random datasets} of various sizes to test the Merge Sort algorithm's efficiency.
+
+\end{itemize}
+\medskip
+
+\divider
+
+
+\cvsection{Intern experience}
+\cvevent{\textbf{TRAINING - Full Stack Web Development}}{Acciojob}{Sept 2022 -- present}{Delhi}
+\divider
+\medskip
+
+\cvevent{\textbf{INDO-GERMAN TOOL ROOM}}{at Indore Government Tool Room, Indore, India} 
+{NOV 2019 -- 1 Month }{Indore.}
+\begin{itemize}
+    \smallskip  \smallskip
+
+\item Gained practical knowledge of CNC and milling machines Using their programming languages G-code and M-code
+    \smallskip  \smallskip
+
+\item Acquired knowledge of quality control 
+    \smallskip  \smallskip
+
+\item inspect several techniques to ensure precision and accuracy in manufactured parts.
+
+\end{itemize}
+\medskip
+
+\cvsection{Achievements}
+\smallskip
+\begin{itemize}
+\item I have solved 300+ questions on different coding platforms like Leetcode, GFG, HackerRank.
+\smallskip  \smallskip
+
+\item I got the National Cadet Corps A 'set certificate ,Scholorship.
+    \smallskip  \smallskip
+
+\item Elected Member of MESA committee
+    \smallskip  \smallskip
+
+\item Won 1st price in Impulse Technical Festival event - Design of AeroDynamics to eliminate Resistance - Using AutoCad.
+    \smallskip  \smallskip
+
+\end{itemize}
+
+\clearpage
+\end{document}
+
+
+// --------------------------------------------------------------------------------------------------------------------------
 
 \cvsection{Education}
 \cvevent{\textbf{B.Tech}} {Mechanical Engineering}{ JUL 2019 - SEPT 2022 \hspace{0.8 cm} CGPA : 8.6 }{}
